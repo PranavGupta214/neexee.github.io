@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Arapey");
+body {
+  margin: 0;
+  font-family: 'Arapey';
+}
+.wholeblock h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0%;
+  top:0px;
+}
+.hidiv{
+  width: 45%;
+  margin: auto;
+  align-items:baseline;
+}
+.flexdisplay {
+  display: flex;
+  margin: auto;
+height: 70vh;
+}
+
+.flexdisplay h1 {
+  margin-top: 0%;
+  padding: 0px;
+  top:0px;
+}
+
+section {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+}
+section blockquote {
+  font-size: 2.3em;
+  width: 50%;
+  margin-top: 17%;
+  position: absolute;
+}
+section blockquote span {
+  width: 100%;
+  background: red;
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+}
+section img {
+  position: absolute;
+}
+section img:nth-of-type(1) {
+  width: 40%;
+  right: 0;
+  top: 20%;
+}
+section img:nth-of-type(2) {
+  width: 25%;
+  right: 40%;
+  top: 29%;
+  margin-top: 15%;
+}
+
+section:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+.sticky {
+  background: white !important;
+
+}
+#downi{
+  font-size: 200%;
+  display: block;
+  margin: auto;
+}
+.stickyheading{
+font-size: 3em;
+}
+.percentage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 5px solid lightgrey;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
