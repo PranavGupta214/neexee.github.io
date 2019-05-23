@@ -3,17 +3,32 @@
 font-family: "Harabara";
 src: url("Harabara.otf");
 }
-.first{
-  height:70vh;
+.backimage{
+
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
 }
+
 body{
-   background-image: url(background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+height: 100%;
+}
+@media(max-width:1250px) {
+  body{
+
+  }
 }
 *{
   margin: 0px;
@@ -21,6 +36,8 @@ body{
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: #505962;
+  box-sizing: border-box;
+
 }
 .nextthing{
   margin-left: 100px;
@@ -280,42 +297,205 @@ background-image: linear-gradient(to right top, #1f2f47, #003d4f, #004949, #2152
 
 }
 /*==================nav bar=================*/
-.background-color{
-margin-top: 0px;
-/* background-color:rgb(96, 186, 76);  */
-width: 100%;
-height: 50px;
-padding: 1px;
-position: fixed;
-z-index: 10;
-background-color: white;
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+font-family: 'Poppins', sans-serif;
+  background-color: rgb(96,186,76);
+background: white;
+opacity: 1;
+}
+.navlogo{
+  color: ;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  display: none;
+  font-family: 'Poppins', sans-serif;
+}
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+}
+.navsignin{
+  color: rgb(7,107,255);
+  font-family: 'Poppins', sans-serif;
 
-.background-color li{
+
+}
+.navsignin h6{
+  font-size: 19px;
+}
+.navsignin a:hover{
+  text-decoration: none;
+}
+.navlinks{
   list-style: none;
-  margin-left: 40px;
-  float: left;
-  font-size: 130%;
-    line-height: 50px;
+}
+.navlinks li{
+  color: ;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+margin-top: 15px;
+}
+.navlinks a:hover{
+  text-decoration: none;
+}
+.navlinks a{
+  color: ;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:black ;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.burger{
+  display: none;
+}
+.headerdisplaynone{
+  display: none;
+}
+@media screen and (max-width:1024px){
+  .navlinks{
+
+    width:60%;
+  }
+}
+@media screen and (max-width:768px){
+body{
+  overflow-x: hidden;
+}
+.navsignin{
+  display: none;
+}
+.navlogo{
+  display: block;
+}
+.headerdisplaynone{
+  display: block;
+}
+.navlinks{
+  position: absolute;
+  right: 0px;
+  height: 92vh;
+  top:8vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  }
+  .navlinks li{
+    opacity: 1;
+    padding: 20px
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+
+@keyframes navLinkFade{
+  0% li{
+    opacity: 0px;
+    transform: translateX(50px);
+  }
+  100% li{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(+45deg) translate(-5px,-6px);
+
 }
 
-p{
-  float: right;
-  margin-right: 70px;
-  font-size: 130%;
-  line-height: 50px;
 }
+}
+
+
+
+
+
+
+
+
+/*=======================different random things=============*/
 .hr{
   position: relative;
   top:33px;
   font-size: 120%;
 }
 
+
+
 .logoimg{
   width:50%;
   display: block;
   margin: auto;
-  margin-top:19%;
+  margin-top:17%;
+}
+@media(max-width:950px){
+  .logoimg{
+    width:60%;
+    display: block;
+    margin: auto;
+    margin-top:20%;
+  }
+}
+@media(max-width:750px){
+  .logoimg{
+    width:60%;
+    display: block;
+    margin: auto;
+    margin-top:25%;
+  }
+}
+@media(max-width:600px){
+  .logoimg{
+    width:60%;
+    display: block;
+    margin: auto;
+    margin-top:50%;
+  }
+}
+@media(max-width:500px){
+  .logoimg{
+    width:70%;
+    display: block;
+    margin: auto;
+    margin-top:50%;
+  }
 }
 .logoimgtext{
     margin-bottom: 15vh;
@@ -471,6 +651,97 @@ margin-left: 33%;
 .contact-form{
   background-color: white;
 }
+.contact-form p{
+  display: inline;
+  margin: 0px;
+  margin-left: 10px;
+  float: none;
+}
+.checkbox{
+  background-color: #eee;
+}
+
+.recaptcha{
+  display: block;
+  margin: auto;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  left: 25%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 2px lightgrey solid;
+}
+.container h5{
+  margin-left: 20px;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
 .name, .mail, .number, .products,.companyname{
   width:400px;
   background: transparent;

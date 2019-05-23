@@ -9,33 +9,55 @@
     <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
-    <div id="home" name="home">
-       <div class="background-color" id="navbarResponsive">
-          <ul>
-            <li href="#home">Home</li>
-            <li>Features</li>
-            <li>Team</li>
-            <li>Price</li>
-            <li>Contact Us</li>
-            <p><a href="www.mailvolution.com">Sign in</a></p>
-          </ul>
-          <hr class="hr">
-      </div>
-    <br><br><br>
-      <main>
-      <div class="first">
-        <img src="logo.png" class="logoimg"/>
-        <br>
-        <h1 class="logoimgtext">the mailvolution</h1>
-      </div>
-        <br><br><br>
 
-       <div class="wholeblock">
+ <div class="backimage">
+  <nav>
+    <div class="nav">
+      <div class="navlogo">
+         <h6 href="index.html">neexee</h6>
+      <!--  <img src="images/logos/purplelogo2.png" alt=""> -->
+      </div>
+      <ul class="navlinks">
+        <a href="#home"><li>home</li></a>
+        <a href="#features"><li>Features</li></a>
+        <a href="#team"><li>Team</li></a>
+        <a href="#price"><li>Price</li></a>
+        <a href="#whiteback"><li>Contact Us</li></a>
+        <a href="www.mailvolution.com" class="headerdisplaynone"><li>Sign In</li></a>
+      </ul>
+      <div class="navsignin">
+        <a href="www.mailvolution.com"><h6>sign in</h6></a>
+      </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+    </div>
+  </nav>
+
+
+    <br><br><br>
+    <div class="first" id="home">
+
+      <img src="logo.png" class="logoimg"/>
+      <br>
+      <h1 class="logoimgtext">the mailvolution</h1>
+    </div>
+  </div>
+      <main>
+
+
+
+       <div class="wholeblock" id="features">
 
         <section class="sticky">
           <h2 class="stickyheading" align="center">What is neexee?</h2><br>
@@ -47,7 +69,7 @@
         </section>
 
         <section class="flexdisplay">
-          <div class="hidiv"><h1 data-aos="fade-right">A platform for writing emails in a collaborative way, that includes mentions, tasks, calendar and many other tools in a revolutionary, real-time, productive, unbelievably easy, unseen way.</h1></div>
+          <div class="hidiv"><h1 data-aos="fade-right"> NOT just another email client. It’s the revolution in email. It’s brining order into the existing email chaos with inline answers in an evolving conversation. It’s having a chat along with your mails. It’s having automatic reminders of your unanswered and pending mails. And it’s much more</h1></div>
           <div class="hidiv"><h1 data-aos="fade-left">A 21st century mail, at last. See in real-time who’s online, who’s answering your mail, and chat with the participants of the conversation, keeping the whole chat session as part of the email, even in your old-fashioned clients</h1></div>
         </section>
       </div>
@@ -67,21 +89,21 @@
       <div class="functionflex">
         <div class="offers">
          <ul>
-            <li><i class="fas fa-users margini"></i>Collaborative conversations with inline <i class="margin2">answers</i></li>
-            <li><i class="fas fa-stopwatch margini"></i>automatic follow-up reminders</li>
-            <li><i class="fas fa-link margini"></i>real-time information on who’s connected, and who’s answering a mail</li>
-            <li><i class="fas fa-address-book margini"></i>#tags, @mentions,>task assignments and +deadlines within mail body</li>
-            <li><i class="fas fa-comments margini"></i>a built-in revolutionary chat: conversations are included as attachments in the mails (and video chat coming soon)</li>
-            <li><i class="fas fa-align-right margini"></i>Paragraph level read status and “action required” buttons</li>
+            <li data-aos="fade-right"><i class="fas fa-users margini"></i>Collaborative conversations with inline <i class="margin2">answers</i></li>
+            <li data-aos="fade-right"><i class="fas fa-stopwatch margini"></i>automatic follow-up reminders</li>
+            <li data-aos="fade-right"><i class="fas fa-link margini"></i>real-time information on who’s connected, and who’s answering a mail</li>
+            <li data-aos="fade-right"><i class="fas fa-address-book margini"></i>#tags, @mentions,>task assignments and +deadlines within mail body</li>
+            <li data-aos="fade-right"><i class="fas fa-comments margini"></i>a built-in revolutionary chat: conversations are included as attachments in the mails (and video chat coming soon)</li>
+            <li data-aos="fade-right"><i class="fas fa-align-right margini"></i>Paragraph level read status and “action required” buttons</li>
           </ul>
         </div>
         <div class="offers">
          <ul>
-            <li><i class="fas fa-paperclip margini"></i>Attachments version control system</li>
-            <li><i class="fas fa-robot margini"></i>A.I powered dashboard</li>
-            <li><i class="fab fa-wpforms margini"></i>Single and Multiple choice forms integrated in the mail body</li>
-            <li><i class="fas fa-users-cog margini"></i>include anyone at any moment, and they’ll see the whole mail conversation and any previous chat, in the correct order with no chaos</li>
-            <li><i class="fas fa-tools margini"></i>Integration with external tools coming soon</li>
+            <li data-aos="fade-left"><i class="fas fa-paperclip margini"></i>Attachments version control system</li>
+            <li data-aos="fade-left"><i class="fas fa-robot margini"></i>A.I powered dashboard</li>
+            <li data-aos="fade-left"><i class="fab fa-wpforms margini"></i>Single and Multiple choice forms integrated in the mail body</li>
+            <li data-aos="fade-left"><i class="fas fa-users-cog margini"></i>include anyone at any moment, and they’ll see the whole mail conversation and any previous chat, in the correct order with no chaos</li>
+            <li data-aos="fade-left"><i class="fas fa-tools margini"></i>Integration with external tools coming soon</li>
           </ul>
         </div>
       </div>
@@ -97,8 +119,8 @@
           <br><br><br>
       <div class="wholefunction">
           <div class="functionbackgroundimage">
-            <h1 class="functionh42">Neexee is the Mailvolution</h1>
-            <h2 class="functionh4">(not just another email client).</h2>
+            <h1 class="functionh42" data-aos="fade-up">Neexee is the Mailvolution</h1>
+            <h2 class="functionh4" data-aos="fade-up">(not just another email client).</h2>
           </div>
             <br><br><br>
             <h5 class="functionpara">No Email Killer is not going to make email disappear. But email is a solution from the 70s that has barely improved lately. Major changes have been to add bold and italics!.<br><br>
@@ -106,46 +128,47 @@
               Inline answers, automatic follow-up reminders, real-time information on who’s answering the mail, read status, A.I powered dashboard, #tags, @mentions, >tasks and +deadlines within the body, a version control system for attachment, and so on.<br><br>
               A state-of-the-art tool that converts emails into collaborative conversations, correctly organized and presented. One single tool that allows real-time chatting with the participants and including the session as part of the email. A tool to automatically remind you of your pending mails, and of the ones that you’re waiting for an answer. One tool that takes business communications (both internal and external) to a new level.</h5>
       </div>
-
+    </div>
 <hr class="nextthing">
 
       <div class="opinions">
-        <div class="reviews"><h4 align="center" class="reviewh4">I’ve tried many email related productivity tools, and they all focus on having your inbox empty. It was about time that someone focused on adding productivity to the way we write and answer emails.</h4></div>
-        <div class="reviews2"><h4 align="center" class="reviewh42">The web says “Not just another email client”. And man is it true! It’s really an improvement if you value your time.</h4></div>
-        <div class="reviews3"><h4 align="center" class="reviewh43" >Being able to chat, and including the chat as part of the email is simply brilliant.</h4></div>
-        <div class="reviews4"><h4 align="center" class="reviewh42">I was reluctant to try, but I was shocked when I did. A surprisingly easy and useful tool. I manage hundreds of mails a day, and the gain in time was clear from the beginning.</h4></div>
+        <div class="reviews" data-aos="fade-right"><h4 align="center" class="reviewh4">I’ve tried many email related productivity tools, and they all focus on having your inbox empty. It was about time that someone focused on adding productivity to the way we write and answer emails.</h4></div>
+        <div class="reviews2" data-aos="fade-left"><h4 align="center" class="reviewh42">The web says “Not just another email client”. And man is it true! It’s really an improvement if you value your time.</h4></div>
+        <div class="reviews3" data-aos="fade-right"><h4 align="center" class="reviewh43" >Being able to chat, and including the chat as part of the email is simply brilliant.</h4></div>
+        <div class="reviews4" data-aos="fade-left"><h4 align="center" class="reviewh42">I was reluctant to try, but I was shocked when I did. A surprisingly easy and useful tool. I manage hundreds of mails a day, and the gain in time was clear from the beginning.</h4></div>
 
 
       </div>
 
 <br><br><br><br>
-        <div class="team">
+        <div class="team" id="team">
           <div class="col-12 text-center">
    			  <h1 class="heading">The Team</h1>
    			  <div class="heading-underline"></div>
    		   </div>
 
          <div class="threepeople">
-           <a href="https://www.linkedin.com/in/dmorillo/" target="_blank"><div class="person1"><image src="0.jpeg"/><h4 align="center">David Morillo</h4></div></a>
-           <a href="https://github.com/MGDSoft" target="_blank"><div class="person1"><image src="1.png"/><h4 align="center">Miguel García</h4><h5 align="center">The technical magician<h5></div></a>
-           <a href="https://www.linkedin.com/in/belengomezsanz/" target="_blank"><div class="person1"><image src="2.jpeg"/><h4 align="center">Belén Gomez</h4></div></a>
+           <a href="https://www.linkedin.com/in/dmorillo/" target="_blank"><div class="person1" data-aos="fade-right"><image src="0.jpeg"/><h4 align="center">David Morillo</h4></div></a>
+           <a href="https://github.com/MGDSoft" target="_blank"><div class="person1" data-aos="fade-down"><image src="1.png"/><h4 align="center">Miguel García</h4><h5 align="center">The technical magician<h5></div></a>
+           <a href="https://www.linkedin.com/in/belengomezsanz/" target="_blank"><div class="person1" data-aos="fade-left"><image src="2.jpeg"/><h4 align="center">Belén Gomez</h4></div></a>
          </div>
            <br><Br><br><Br><br><Br><br><Br><br><Br>
          <div class="threepeople">
-           <a href="https://www.linkedin.co m/in/mariomorillom/" target="_blank"><div class="person1"><image src="4.jpeg"/><h4 align="center">Mario Morillo</h4></div></a>
-           <a href="https://www.linkedin.co m/in/rafaelmorillo" target="_blank"><div class="person1"><image src="5.jpeg"/><h4 align="center">Rafael Morillo</h4></div></a>
+           <a href="https://www.linkedin.co m/in/mariomorillom/" target="_blank"><div class="person1" data-aos="fade-up"><image src="4.jpeg"/><h4 align="center">Mario Morillo</h4></div></a>
+           <a href="https://www.linkedin.co m/in/rafaelmorillo" target="_blank"><div class="person1" data-aos="fade-up"><image src="5.jpeg"/><h4 align="center">Rafael Morillo</h4></div></a>
          </div>
 
 
 
         </div>
 
+
         <br><br><br><br><br><br><hr class="nextthing"><br><br><br>
 
-        <div class="price">
+        <div class="price" id="price">
           <div class="col-12 text-center">
-            <h1 class="heading">Plan available for everyone</h1>
-            <h3>Choose your plan. Try if free during the beta version</h3><br>
+            <h1 class="heading" data-aos="fade-right">Plan available for everyone</h1>
+            <h3 data-aos="fade-right">Choose your plan. Try if free during the beta version</h3><br>
 
             <div class="heading-underline"></div>
           </div>
@@ -342,7 +365,7 @@
         <hr class="nextthing"><br><br><br>
 
         <div class="col-12 text-center" id="whiteback">
-        <h1 class="heading">Contact Us</h1>
+        <h1 class="heading" data-aos="fade-right">Contact Us</h1>
         <div class="heading-underline"></div>
        </div>
         <br>
@@ -351,8 +374,13 @@
               <input name="name" type="text" class="name" id="name" placeholder="Your full name: " required>
               <input name="email" type="text" class="companyname" id="companyname" placeholder="Company name: " required>
               <input name="email" type="email" class="mail" id="email" placeholder="Your email: " required>
-              <input name="comment" type="text" class="products" id="comment" placeholder="Question ">
+              <input name="comment" type="text" class="products" id="comment" placeholder="Question "><br>
 
+                <label class="container"><h5>I have read and agreed to the <b>terms and conditions</b></h5>
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <img src="recaptcha.png" width="300" class="recaptcha"/>
               <button name="submit" type="submit" id="submit" class="send" onclick="show_alert();">SEND</button>
           </form>
         </div>
@@ -422,7 +450,37 @@
   <script>
   AOS.init({
   	offset: 200,
-  	duration: 600,
+  	duration: 800,
   });
+  </script>
+
+  <script type="text/javascript">
+    const navSlide = () => {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.navlinks');
+      const navLinks = document.querySelectorAll('.navlinks li')
+
+      burger.addEventListener('click', () => {
+          //toggle nav
+        nav.classList.toggle('nav-active');
+
+        //animate navLinks
+        navLinks.forEach((link, index) => {
+          if (link.style.animation){
+            link.style.animation = '';
+          }
+          else{
+          link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
+          }
+        });
+        //burger
+
+        burger.classList.toggle('toggle');
+
+      });
+
+
+    }
+    navSlide();
   </script>
 </html>
