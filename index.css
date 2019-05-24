@@ -18,7 +18,11 @@ background-image: url(background.jpg);
 background-repeat: no-repeat;
 background-size: contain;
 }
-
+.backimage{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 *{
   margin: 0px;
   padding: 0px;
