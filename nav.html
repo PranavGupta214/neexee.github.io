@@ -4,64 +4,178 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="nav.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
   </head>
   <body>
-    <section>
-      <h1>Scroll down</h1>
-    </section>
+    <div class="price">
+      <div class="buttonalign"><button class="monthly" onclick="myFunction2()">Monthly</button><button class="monthly2" onclick="myFunction()">Yearly</button></div>
+      <table>
+        <tr>
+          <th class="greenprice"></th>
+          <td class="greenprice">Free</td>
+          <td class="greenprice2">Pro</td>
+          <td class="greenprice3">Enterprise</td>
+          <td class="greenprice4">Edu/Non Profit</td>
+        </tr>
+        <tr>
+          <th>Number of accounts</th>
+          <td>5</td>
+          <td>50</td>
+          <td>200*</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th>Domains</th>
+          <td>1</td>
+          <td>3</td>
+          <td>unlimited</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>Max Attachment size</th>
+          <td>10Mb</td>
+          <td>30Mb</td>
+          <td>100Mb</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Mail Storage</th>
+          <td>5 Gb</td>
+          <td>50 Gb</td>
+          <td>1Tb</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th>Doc Storage</th>
+          <td>50 Gb </td>
+          <td>500 Gb </td>
+          <td>1 Tb</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th><p></p><b></b></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Audio&Video Chat</th>
+          <td>No</td>
+          <td>Max 2 users</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th>Aliases(shared accounts)</th>
+          <td>0</td>
+          <td>10</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th>Plugin Integrations</th>
+          <td>No</td>
+          <td>5</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th><p></p><b></b></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Ads</th>
+          <td>Yes</td>
+          <td>Never</td>
+          <td>Never ever</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th class="priceprice3"><p class="priceprice">Price</p><br><br></th>
+          <td><p class="priceprice2">0$<br></p></td>
+          <td><p class="priceprice2" id="myDIV">9€</p><i id="myDIV2">/user billed monthly</i>
+              <p class="priceprice2" id="myDIV3">7€</p><i id="myDIV4">/user billed yearly</i></td>
+          <td><p class="priceprice2" id="myDIV5">19€</p><i id="myDIV6">/user billed monthly</i>
+                <p class="priceprice2" id="myDIV7">17€</p><i id="myDIV8">/user billed yearly</i></td>
+          <td><p class="priceprice2">0$</p></td>
+        </tr>
+        <tr>
+          <th class="buynow"><br><Br><BR><br><BR></th>
+          <td class="buynow"><button class="button" style="vertical-align:middle"><span>Sign Up</span></button></td>
+          <td class="buynow"><button class="button" style="vertical-align:middle"><span>Sign Up</span></button></td>
+          <td class="buynow"><button class="button" style="vertical-align:middle"><span>Sign Up</span></button></td>
+          <td class="buynow"><button class="button" style="vertical-align:middle"><span>Sign Up</span></button></td>
 
-    <section class="sticky">
-        <blockquote>"Its A platform for writing emails in a collaborative way, that includes mentions, tasks, calendar and many other tools in a revolutionary, real-time, productive, unbelievably easy, unseen way."<span></span></blockquote>
-        <img id="office" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/office1.png">
-
-        <div id="box"></div>
-    </section>
-
-    <section>
-  <h1>Scroll up</h1>
-</section>
-
+        </tr>
+      </table>
     </div>
 
-    <script>
-    var tl = new TimelineMax({onUpdate:updatePercentage});
-    var tl2 = new TimelineMax();
-    const controller = new ScrollMagic.Controller();
-
-    tl.from('blockquote', .5, {x:200, opacity: 0});
-    tl.from('span', 1, { width: 0}, "=-.5");
-    tl.from('#office', 1, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-1");
-    tl.from('#building', 1, {x:200, opacity: 0, ease: Power4.easeInOut}, "=-.7");
-
-    tl2.from("#box", 1, {opacity: 0, scale: 0});
-    tl2.to("#box", .5, {left: "36%", scale: 1.3,borderColor: 'rgb(96,186,76)', borderWidth: 5, boxShadow: '1px 1px 0px 0px rgba(0,0,0,0.09)'})
-
-    const scene = new ScrollMagic.Scene({
-      triggerElement: ".sticky",
-                triggerHook: "onLeave",
-                duration: "100%"
-    })
-      .setPin(".sticky")
-      .setTween(tl)
-        .addTo(controller);
-
-    const scene2 = new ScrollMagic.Scene({
-      triggerElement: "blockquote"
-    })
-      .setTween(tl2)
-        .addTo(controller);
-
-
-    function updatePercentage() {
-      //percent.innerHTML = (tl.progress() *100 ).toFixed();
-      tl.progress();
-      console.log(tl.progress());
-    }
-    </script>
-    <script src="common.js"></script>
+    </div>
   </body>
+  <script>
+  function myFunction() {
+  var x = document.getElementById("myDIV3");
+    x.style.display = "block";
+
+    var z = document.getElementById("myDIV4");
+      z.style.display = "block";
+
+  var y = document.getElementById("myDIV");
+  y.style.display = "none";
+
+  var w = document.getElementById("myDIV2");
+  w.style.display = "none";
+
+
+
+  var a = document.getElementById("myDIV7");
+    a.style.display = "block";
+    var b = document.getElementById("myDIV8");
+      b.style.display = "block";
+
+  var c = document.getElementById("myDIV5");
+  c.style.display = "none";
+
+  var d = document.getElementById("myDIV6");
+  d.style.display = "none";
+
+}
+
+
+
+
+
+function myFunction2() {
+var x = document.getElementById("myDIV");
+  x.style.display = "block";
+  var z = document.getElementById("myDIV2");
+    z.style.display = "block";
+
+var y = document.getElementById("myDIV3");
+y.style.display = "none";
+
+var w = document.getElementById("myDIV4");
+w.style.display = "none";
+
+
+
+var a = document.getElementById("myDIV5");
+  a.style.display = "block";
+
+  var b = document.getElementById("myDIV6");
+    b.style.display = "block";
+
+var c = document.getElementById("myDIV7");
+c.style.display = "none";
+
+var d = document.getElementById("myDIV8");
+d.style.display = "none";
+
+}
+  </script>
 
 </html>
